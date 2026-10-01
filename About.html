@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | RedStore</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!----------------------- Header Section ----------------------->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="Index.html"><img src="images/logo.png" width="130px" /> </a>
+          </div>
+          <nav>
+            <ul id="menuitems">
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="Product.html">Products</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Account.html">Account</a></li>
+            </ul>
+          </nav>
+           <a href="Cart.html"> <img class="cart" src="images/cart.png" width="25px" /></a>
+            <img
+              src="images/menu.png"
+              class="menu-icon"
+              onclick="menutoggle()"
+            />
+        </div>
+      </div>
+    </div>
+
+    <!----------------------- About Section ----------------------->
+    <div class="categories" style="margin: 50px 0;">
+      <div class="container-2" style="margin-top: 100px;">
+        <h2 class="title">About RedStore</h2>
+        <div class="line"></div>
+        
+        <div class="row" style="align-items: center; gap: 30px;">
+          <div class="col-2">
+            <img src="images/image1.png" style="border-radius: 10px;" />
+          </div>
+          <div class="col-2">
+            <h2 style="color: #555; margin-bottom: 20px; font-size: 35px;">Give Your Workout A New Style!</h2>
+            <p style="margin-bottom: 15px; font-size: 16px; color: #555;">
+              Welcome to RedStore, your ultimate destination for high-quality sports apparel, fitness gear, and athletic footwear. We believe that success isn't always about greatness; it's about consistency. Consistent hard work gains success, and greatness will follow.
+            </p>
+            <p style="margin-bottom: 20px; font-size: 16px; color: #555;">
+              Our mission is to sustainably make the pleasure and benefits of sports accessible to the many. Whether you're hitting the gym, running tracks, or living an active lifestyle, we provide top-notch products designed for comfort, durability, and style.
+            </p>
+            <a href="Product.html" class="btn">Explore Products &#8594;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!----------------------- Footer Section ----------------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iOS Mobile Phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" alt="" />
+            <p>
+              Our Purpose Is To Sustainably Make The Pleasure And Benefits Of
+              Sports Accessible To The Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="">Coupons</a></li>
+              <li><a href="">Blog Post</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Join Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright @ 2022 - Web Development</p>
+      </div>
+    </div>
+
+    <!-- js for toggle menu -->
+    <script>
+      var menuitems = document.getElementById("menuitems");
+      menuitems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "200px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

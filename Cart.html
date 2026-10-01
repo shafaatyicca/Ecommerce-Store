@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Items Details</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet"
+    href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+    />
+  </head>
+  <body>
+    <!----------------------- Header Section ----------------------->
+
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="Index.html"><img src="images/logo.png" width="130px" /></a>
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="Cart.html"
+          ><img class="cart" src="images/cart.png" width="25px"
+        /></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+
+    <!----------------------- Cart Items Details Section ----------------------->
+
+    <div class="container-2 cart-page">
+      <table>
+        <tr>
+          <th>Products</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-1.jpg" />
+              <div>
+                <p>Red Printed T-Shirt</p>
+                <small>Price: $50.00</small> <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-2.jpg" />
+              <div>
+                <p>Black Shoes</p>
+                <small>Price: $45.00</small> <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$45.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-3.jpg" />
+              <div>
+                <p>Black Printed Trouser</p>
+                <small>Price: $95.00</small> <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$95.00</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$200.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$35.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$235.00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!----------------------- Footer Section ----------------------->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iOS Mobile Phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" alt="" />
+            <p>
+              Our Purpose Is To Sustainably Make The Pleasure And Benefits Of
+              Sports Accessible To The Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a a href="">Coupons</a></li>
+              <li><a a href="">Blog Post</a></li>
+              <li><a a href="">Return Policy</a></li>
+              <li><a a href="">Join Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a a href="">Facebook</a></li>
+              <li><a a href="">Twitter</a></li>
+              <li><a a href="">Instagram</a></li>
+              <li><a a href="">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright @ 2022 - Web Development</p>
+      </div>
+    </div>
+
+    <!-- js for toggle menu -->
+
+    <script>
+      var menuitems = document.getElementById("menuitems");
+      menuitems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "200px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
